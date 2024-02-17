@@ -1,5 +1,6 @@
 <template>
   <div id="app shopItems">
+
     <router-view/>
 
     <div class="cart">
@@ -45,34 +46,41 @@ export default {
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
+$color-black: #020402;
+$color-primary: #FF5E5B;
+$color-error: #EB5160;
+
 body {
   font-family: "Roboto", sans-serif;
 }
 
 a{
   text-decoration: none;
-  color: black;
+  color: $color-black;
 }
 
 a:visited {
-  color: black;
+  color: $color-black;
 }
 
 p {
   margin: 0;
 }
 
-nav {
-  padding: 30px;
-}
+button {
+  background: $color-primary;
+  color: white;
+  border-radius: 4px;
+  padding: 6px 8px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.45);
+  transition: all 0.15s;
+  min-width: 80px;
 
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+  &:hover {
+    box-shadow: none;
+  }
 }
 
 .cart {
@@ -80,11 +88,20 @@ nav a.router-link-exact-active {
   top: 80px;
   right: 16px;
   width: 160px;
-  box-shadow: 0 0 0 0 rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.4);
   background: white;
+  padding: 16px;
+
+  h2{
+    margin: 0;
+  }
 
   &--item {
     margin-bottom: 16px;
+
+    button{
+      background-color: $color-error;
+    }
   }
 }
 </style>

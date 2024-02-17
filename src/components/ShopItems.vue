@@ -45,67 +45,6 @@
 </script>
   
 <style lang="scss" scoped>
-  #shopItems {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 32px;
-    column-gap: 32px;
-
-    .item {
-      max-width: 240px;
-      display: flex; 
-      flex-direction: column;
-      border: 1px solid black;
-      border-radius: 4px;
-      padding: 16px 0;
-      row-gap: 8px;
-      // fix this
-      flex: 0 0 33%;
-
-      > * {
-        padding: 0 16px;
-      }
-
-      &--image-container {
-        height: 200px;
-        background-size: 120px;
-        background-repeat: no-repeat;
-        background-position: center center;
-
-        img{
-          max-width: 100%;
-        }
-      }
-      
-      &--title{
-        font-size: 20px;
-        margin: 0;
-        line-height: 1.2;
-      }
-
-      &--category{
-        text-transform: capitalize;
-      }
-
-      &--description{
-        
-      }
-
-      &--price{
-        font-size: 18px;
-      }
-
-      &--rating{
-        &-rate {
-
-        }
-
-        &-count {
-
-        }
-      }
-    }
-  }
 
   #shopItems {
     display: flex;
@@ -117,7 +56,7 @@
       max-width: 240px;
       display: flex; 
       flex-direction: column;
-      border: 1px solid black;
+      border: 1px solid rgba(0,0,0,0.2);
       border-radius: 4px;
       padding: 16px 0;
       row-gap: 8px;
