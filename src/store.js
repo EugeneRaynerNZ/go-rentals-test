@@ -29,11 +29,9 @@ export default new Vuex.Store({
             state.cart.push({ ...item, quantity: 1, totalPrice: item.price });
         }
     },
-    removeFromCart(state, itemId) {
-        const index = state.items.findIndex(item => item.id === itemId);
-        if (index !== -1) {
-            state.items.splice(index, 1);
-        }
+    removeFromCart(state, payload) {
+        const i = state.cart.map(item => item.id).indexOf(payload.id);
+        state.cart.splice(i, 1);
     }
   },
   actions: {

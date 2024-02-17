@@ -9,7 +9,7 @@
         <p>${{ cartItem.price }}</p>
         <p>Quantity: {{ cartItem.quantity }}</p>
         <p>Sub Total: {{ cartItem.totalPrice }}</p>
-        <button @click="removeFromCart(cartItem.id)">Remove from Cart</button>
+        <button @click="removeFromCart(cartItem)">Remove from Cart</button>
       </div>
       <!-- {{ cartItems }} -->
       <p>Total: ${{ cartTotal }}</p>
