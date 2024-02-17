@@ -35,14 +35,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
-
-.item--view {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
+<style lang="scss" scoped>
 
 .back--button-container{
   width: 440px;
@@ -62,6 +55,13 @@ export default {
 
     > * {
       padding: 0 16px;
+    }
+
+    &--view {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
     }
 
     &--image-container {

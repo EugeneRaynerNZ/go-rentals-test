@@ -44,7 +44,7 @@
   }
 </script>
   
-<style lang="scss">
+<style lang="scss" scoped>
   #shopItems {
     display: flex;
     flex-wrap: wrap;
